@@ -16,11 +16,13 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for (let i=1; i <= destination; i++ ){
+        sum +=i;
+
+    }
     return sum
-}
+};
 
-
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -35,21 +37,38 @@ function sumOfNumbersTo(destination) {
 function countEvenNumbersWithin(destination) {
     // Write your code here
     // get the number from 1 to destination
+    let arrNum = 
+    Array.from({length:destination}).map((each, index) => index + 1)
+
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
 
+    //to get sum, count and array of even numnbers
+    for(i = 0; i<=arrNum.length; i++){
+        if (arrNum[i] % 2 == 0){
+            sum += arrNum[i];
+            count ++;
+            arrayOfEvenNumbers.push(arrNum[i]);
+
+        }
+        
+
+    }
     return {
-        // property value shorthand
-        // when the property name and the value name are the same
-        // you can just write the property name in your object
+        
         count,
         sum,
         arrayOfEvenNumbers
     };
-}
+};
+// property value shorthand
+        // when the property name and the value name are the same
+        // you can just write the property name in your object
+const destination = 10;
+const result = countEvenNumbersWithin(destination);
+console.log(result)// will print object with count, sum and array of even numbers
 
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
