@@ -45,7 +45,7 @@ function countEvenNumbersWithin(destination) {
     let arrayOfEvenNumbers = [];
 
     //to get sum, count and array of even numnbers
-    for (i = 0; i <= arrNum.length; i++) {
+    for (i = 1; i <= arrNum.length; i++) {
         if (arrNum[i] % 2 == 0) {
             sum += arrNum[i];
             count++;
