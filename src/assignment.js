@@ -53,6 +53,9 @@ function countEvenNumbersWithin(destination) {
 
         }
     }
+    // property value shorthand
+// when the property name and the value name are the same
+// you can just write the property name in your object
     return {
 
         count,
@@ -60,12 +63,8 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 };
-// property value shorthand
-// when the property name and the value name are the same
-// you can just write the property name in your object
-const destination = 10;
-const result = countEvenNumbersWithin(destination);
-console.log(result)// will print object with count, sum and array of even numbers
+
+
 
 assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
